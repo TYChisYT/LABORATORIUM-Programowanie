@@ -36,11 +36,40 @@ let area = Math.sqrt(p*(p-s1)*(p-s2)*(p-s3))
 console.log(area);
 
 // b) wynik + wyjaśnienia
-document.getElementById('strony').innerHTML = 'Dla 3-kąta z stronami a, b i c pole ='+area;
+console.log('Dla 3-kąta z stronami a, b i c pole '+ area)
+document.getElementById('strony').innerHTML = 'Dla 3-kąta z stronami a, b i c pole = '+area;
 
 
 /*
     Zadania 3 - losowanie liczb
 */
 
+let gnum=Math.ceil(Math.random()*10);
+let num =prompt('podaj liczbę: ')
+if(gnum === num){
+    console.log('dobra robota!')
+    document.getElementById('ran').innerHTML = 'Dobra robota!'
 
+ }else{
+    console.log('sprobuj ponownie')
+    document.getElementById('ran').innerHTML = 'sprobuj ponownie'
+ }
+
+ /*
+    Zadanie 4
+*/
+
+let num1=parseFloat(prompt('podaj pierwszą liczbę: '));
+let num2=parseFloat(prompt('podaj drugą liczbę: '));
+let num3=parseFloat(prompt('podaj trzecią liczbę: '));
+
+if(num1==num2 && num2==num3){
+    console.log('Liczby są równe');
+}else{
+    if(num1>num2 && num1>=num3){
+        console.log('Największa jest pierwsza liczba: '+num1);
+    }else if(num2>= num1 && num2> num3){
+        console.log('Największa jest druga liczba: '+num2);
+    }else if(num3>=num1 && num3> num2){
+        console.log('Największa jest trzecią liczba: '+num3);
+}}
