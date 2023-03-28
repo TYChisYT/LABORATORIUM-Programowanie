@@ -68,8 +68,12 @@ if(num1==num2 && num2==num3){
 }else{
     if(num1>num2 && num1>=num3){
         console.log('Największa jest pierwsza liczba: '+num1);
+        document.getElementById('num').innerHTML = 'Największa jest pierwsza liczba: '+num1;
     }else if(num2>= num1 && num2> num3){
         console.log('Największa jest druga liczba: '+num2);
+        document.getElementById('num').innerHTML = 'Największa jest druga liczba: '+num2;
+        
     }else if(num3>=num1 && num3> num2){
         console.log('Największa jest trzecią liczba: '+num3);
+        document.getElementById('num').innerHTML = 'Największa jest trzecią liczba: '+num3;
 }}
